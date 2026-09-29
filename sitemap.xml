@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://bonaviahealth.org/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/ru.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bonaviahealth.org/fr.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bonaviahealth.org/zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/index.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/ru.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/ru.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bonaviahealth.org/fr.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bonaviahealth.org/zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/index.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/fr.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/ru.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bonaviahealth.org/fr.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bonaviahealth.org/zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/index.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/zh.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/ru.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bonaviahealth.org/fr.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bonaviahealth.org/zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/index.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>
