@@ -279,32 +279,39 @@
       <h2 style="font-size: 30px; text-align: center; margin-bottom: 12px;">Parlez-nous de votre situation.</h2>
       <p style="font-size: 15px; color: #6B5A46; text-align: center; max-width: 540px; margin: 0 auto 48px;">Un coordinateur vous répondra sous 24 heures avec des options d'hôpitaux et une estimation des coûts.</p>
 
-      <form style="background: #FFFFFF; border: 1px solid #EAE0D2; border-radius: 16px; padding: 40px; display: flex; flex-direction: column; gap: 20px;">
+      <form id="inquiry-form" action="https://api.web3forms.com/submit" method="POST" style="background: #FFFFFF; border: 1px solid #EAE0D2; border-radius: 16px; padding: 40px; display: flex; flex-direction: column; gap: 20px;">
+        <input type="hidden" name="access_key" value="214b52e2-8b28-4fea-a2c5-0dd79a8dcb3a">
+        <input type="hidden" name="subject" value="New inquiry – Bonavia Health (FR)">
+        <input type="hidden" name="from_name" value="Bonavia Health Website">
+        <input type="hidden" name="page_language" value="FR">
+        <input type="checkbox" name="botcheck" style="display: none;" tabindex="-1" autocomplete="off">
         <div class="grid-2" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
           <div style="display: flex; flex-direction: column; gap: 6px;">
             <label for="fullname" style="font-size: 13.5px; color: #5A4B3B;">Nom complet</label>
-            <input id="fullname" type="text" style="padding: 11px 12px; border: 1px solid #E0D2BC; border-radius: 8px; background: #FBF7F1;">
+            <input id="fullname" name="name" required type="text" style="padding: 11px 12px; border: 1px solid #E0D2BC; border-radius: 8px; background: #FBF7F1;">
           </div>
           <div style="display: flex; flex-direction: column; gap: 6px;">
             <label for="email" style="font-size: 13.5px; color: #5A4B3B;">E-mail</label>
-            <input id="email" type="email" style="padding: 11px 12px; border: 1px solid #E0D2BC; border-radius: 8px; background: #FBF7F1;">
+            <input id="email" name="email" required type="email" style="padding: 11px 12px; border: 1px solid #E0D2BC; border-radius: 8px; background: #FBF7F1;">
           </div>
         </div>
         <div class="grid-2" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
           <div style="display: flex; flex-direction: column; gap: 6px;">
             <label for="phone" style="font-size: 13.5px; color: #5A4B3B;">Téléphone (avec indicatif du pays)</label>
-            <input id="phone" type="tel" style="padding: 11px 12px; border: 1px solid #E0D2BC; border-radius: 8px; background: #FBF7F1;">
+            <input id="phone" name="phone" type="tel" style="padding: 11px 12px; border: 1px solid #E0D2BC; border-radius: 8px; background: #FBF7F1;">
           </div>
           <div style="display: flex; flex-direction: column; gap: 6px;">
             <label for="lang" style="font-size: 13.5px; color: #5A4B3B;">Langue préférée</label>
-            <input id="lang" type="text" placeholder="English / Русский / Français" style="padding: 11px 12px; border: 1px solid #E0D2BC; border-radius: 8px; background: #FBF7F1;">
+            <input id="lang" name="preferred_language" type="text" placeholder="English / Русский / Français" style="padding: 11px 12px; border: 1px solid #E0D2BC; border-radius: 8px; background: #FBF7F1;">
           </div>
         </div>
         <div style="display: flex; flex-direction: column; gap: 6px;">
           <label for="msg" style="font-size: 13.5px; color: #5A4B3B;">Décrivez brièvement votre situation</label>
-          <textarea id="msg" rows="4" style="padding: 11px 12px; border: 1px solid #E0D2BC; border-radius: 8px; background: #FBF7F1; resize: vertical;"></textarea>
+          <textarea id="msg" name="message" required rows="4" style="padding: 11px 12px; border: 1px solid #E0D2BC; border-radius: 8px; background: #FBF7F1; resize: vertical;"></textarea>
         </div>
-        <button type="submit" style="align-self: flex-start; background: #B9622F; color: #FBF7F1; padding: 13px 28px; border: none; border-radius: 8px; font-size: 15px; font-weight: 500; margin-top: 8px;">Demander des options d'hôpitaux</button>
+        <p style="font-size: 13px; color: #8C7A62; line-height: 1.6; margin: -6px 0 0;">Vous pourrez envoyer vos dossiers médicaux plus tard par e-mail (info@bonaviahealth.org) ou WhatsApp — inutile de les joindre ici.</p>
+        <button id="inquiry-submit" type="submit" style="align-self: flex-start; background: #B9622F; color: #FBF7F1; padding: 13px 28px; border: none; border-radius: 8px; font-size: 15px; font-weight: 500; margin-top: 8px;">Demander des options d'hôpitaux</button>
+        <p id="inquiry-status" role="status" aria-live="polite" style="display: none; font-size: 14.5px; line-height: 1.6; margin: 0; padding: 14px 16px; border-radius: 8px;"></p>
       </form>
     </div>
   </section>
@@ -349,5 +356,35 @@
   </footer>
 
 </div>
+
+<script>
+(function () {
+  var form = document.getElementById("inquiry-form");
+  if (!form) return;
+  var btn = document.getElementById("inquiry-submit");
+  var status = document.getElementById("inquiry-status");
+  var label = btn.textContent;
+  var MSG = { sending: 'Envoi…', ok: 'Merci — nous avons bien reçu votre demande. Un coordinateur vous répondra sous 24 heures.', err: "Désolé, une erreur s'est produite. Écrivez-nous à info@bonaviahealth.org ou sur WhatsApp : +86 180 2403 6999." };
+  function show(text, ok) {
+    status.textContent = text;
+    status.style.display = "block";
+    status.style.background = ok ? "#EEF5EC" : "#FBEDE8";
+    status.style.color = ok ? "#2F5A2C" : "#8A3A1E";
+  }
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    btn.disabled = true; btn.textContent = MSG.sending; btn.style.opacity = "0.7";
+    status.style.display = "none";
+    fetch(form.action, { method: "POST", headers: { "Accept": "application/json" }, body: new FormData(form) })
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (d && d.success) { form.reset(); show(MSG.ok, true); }
+        else { show(MSG.err, false); }
+      })
+      .catch(function () { show(MSG.err, false); })
+      .finally(function () { btn.disabled = false; btn.textContent = label; btn.style.opacity = "1"; });
+  });
+})();
+</script>
 </body>
 </html>
