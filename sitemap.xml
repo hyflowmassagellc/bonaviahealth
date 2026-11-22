@@ -237,4 +237,120 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/uzbekistan-ru.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/uzbekistan.html"/>
   </url>
+  <url>
+    <loc>https://bonaviahealth.org/russia.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/russia.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/russia-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/russia.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/russia-ru.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/russia.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/russia-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/russia.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/belarus.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/belarus.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/belarus-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/belarus.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/belarus-ru.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/belarus.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/belarus-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/belarus.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/kyrgyzstan.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/kyrgyzstan.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/kyrgyzstan-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/kyrgyzstan.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/kyrgyzstan-ru.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/kyrgyzstan.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/kyrgyzstan-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/kyrgyzstan.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/tajikistan.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/tajikistan.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/tajikistan-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/tajikistan.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/tajikistan-ru.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/tajikistan.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/tajikistan-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/tajikistan.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/nigeria.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/nigeria.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/nigeria.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/kenya.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/kenya.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/kenya.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/ethiopia.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/ethiopia.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/ethiopia.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/ghana.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/ghana.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/ghana.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/cote-divoire.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/cote-divoire.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bonaviahealth.org/cote-divoire-fr.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/cote-divoire.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/cote-divoire-fr.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/cote-divoire.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bonaviahealth.org/cote-divoire-fr.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/cote-divoire.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/senegal.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/senegal.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bonaviahealth.org/senegal-fr.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/senegal.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/senegal-fr.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/senegal.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bonaviahealth.org/senegal-fr.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/senegal.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/cameroon.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/cameroon.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bonaviahealth.org/cameroon-fr.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/cameroon.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/cameroon-fr.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/cameroon.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bonaviahealth.org/cameroon-fr.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/cameroon.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/dr-congo.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/dr-congo.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bonaviahealth.org/dr-congo-fr.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/dr-congo.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/dr-congo-fr.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/dr-congo.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bonaviahealth.org/dr-congo-fr.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/dr-congo.html"/>
+  </url>
 </urlset>
