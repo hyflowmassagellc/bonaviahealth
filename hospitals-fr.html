@@ -75,7 +75,7 @@
       <a class="navlink" href="fr.html#faq" style="font-size: 14.5px;">FAQ</a>
     </div>
     <div style="display: flex; align-items: center; gap: 20px;">
-      <div style="display: flex; align-items: center; gap: 8px; font-size: 12.5px;">
+      <div class="lang-sw" style="display: flex; align-items: center; gap: 8px; font-size: 12.5px;">
         <a class="navlink" href="hospitals.html" style="color: #8C7A62;">EN</a>
         <span style="color: #D8C7AE;">/</span>
         <a class="navlink" href="hospitals-ru.html" style="color: #8C7A62;">RU</a>
@@ -85,7 +85,51 @@
         <a class="navlink" href="hospitals-zh.html" style="color: #8C7A62;">中文</a>
       </div>
       <a class="nav-cta" href="fr.html#contact" style="background: #B9622F; color: #FBF7F1; padding: 10px 20px; border-radius: 8px; font-size: 14px; font-weight: 500;">Parler à un coordinateur</a>
+      <button type="button" class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#241C14" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </div>
+  
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <div class="mm-lang">
+        <a class="navlink" href="hospitals.html" style="color: #8C7A62;">EN</a>
+        <span style="color: #D8C7AE;">/</span>
+        <a class="navlink" href="hospitals-ru.html" style="color: #8C7A62;">RU</a>
+        <span style="color: #D8C7AE;">/</span>
+        <span style="color: #B9622F; font-weight: 600;">FR</span>
+        <span style="color: #D8C7AE;">/</span>
+        <a class="navlink" href="hospitals-zh.html" style="color: #8C7A62;">中文</a>
+      </div>
+      <a href="fr.html#services" class="mm-link">Services</a>
+      <a href="hospitals-fr.html" class="mm-link">Hôpitaux</a>
+      <a href="fr.html#process" class="mm-link">Fonctionnement</a>
+      <a href="fr.html#regions" class="mm-link">Pays</a>
+      <a href="about-fr.html" class="mm-link">À propos</a>
+      <a href="fr.html#faq" class="mm-link">FAQ</a>
+      <a href="privacy-fr.html" class="mm-link">Confidentialité</a>
+      <a href="fr.html#contact" class="mm-cta">Parler à un coordinateur</a>
+    </div>
+    <style>
+      .menu-btn { display: none; background: transparent; border: 1px solid #E0D2BC; border-radius: 8px; width: 42px; height: 42px; align-items: center; justify-content: center; cursor: pointer; padding: 0; }
+      .mobile-menu { flex-basis: 100%; display: flex; flex-direction: column; padding: 10px 0 6px; }
+      .mobile-menu[hidden] { display: none !important; }
+      .mm-link { display: block; padding: 13px 4px; font-size: 16px; color: #241C14; border-bottom: 1px solid #EFE6D8; }
+      .mm-cta { display: block; margin-top: 14px; text-align: center; background: #B9622F; color: #FBF7F1; padding: 13px; border-radius: 8px; font-size: 15px; font-weight: 500; }
+      @media (max-width: 860px) { .menu-btn { display: inline-flex; } nav { flex-wrap: wrap; } .lang-sw { display: none !important; } }
+      .mm-lang { display: flex; align-items: center; gap: 10px; padding: 6px 4px 12px; font-size: 15px; border-bottom: 1px solid #EFE6D8; }
+      @media (min-width: 861px) { .mobile-menu { display: none !important; } }
+    </style>
+    <script>
+      (function () {
+        var b = document.querySelector('.menu-btn'), m = document.getElementById('mobile-menu');
+        if (!b || !m) return;
+        b.addEventListener('click', function () {
+          var open = m.hasAttribute('hidden');
+          if (open) { m.removeAttribute('hidden'); } else { m.setAttribute('hidden', ''); }
+          b.setAttribute('aria-expanded', open ? 'true' : 'false');
+          b.setAttribute('aria-label', open ? 'Fermer le menu' : 'Menu');
+        });
+        m.addEventListener('click', function (e) { if (e.target.tagName === 'A') { m.setAttribute('hidden', ''); b.setAttribute('aria-expanded', 'false'); } });
+      })();
+    </script>
   </nav>
 
   <!-- OFFICIAL PILOT HOSPITALS -->

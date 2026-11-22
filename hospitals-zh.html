@@ -75,7 +75,7 @@
       <a class="navlink" href="zh.html#faq" style="font-size: 14.5px;">常见问题</a>
     </div>
     <div style="display: flex; align-items: center; gap: 20px;">
-      <div style="display: flex; align-items: center; gap: 8px; font-size: 12.5px; white-space: nowrap;">
+      <div class="lang-sw" style="display: flex; align-items: center; gap: 8px; font-size: 12.5px; white-space: nowrap;">
         <a class="navlink" href="hospitals.html" style="color: #8C7A62;">EN</a>
         <span style="color: #D8C7AE;">/</span>
         <a class="navlink" href="hospitals-ru.html" style="color: #8C7A62;">RU</a>
@@ -85,7 +85,51 @@
         <span style="color: #B9622F; font-weight: 600;">中文</span>
       </div>
       <a class="nav-cta" href="zh.html#contact" style="background: #B9622F; color: #FBF7F1; padding: 10px 20px; border-radius: 8px; font-size: 14px; font-weight: 500;">联系协调专员</a>
+      <button type="button" class="menu-btn" aria-label="菜单" aria-expanded="false" aria-controls="mobile-menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#241C14" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </div>
+  
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <div class="mm-lang">
+        <a class="navlink" href="hospitals.html" style="color: #8C7A62;">EN</a>
+        <span style="color: #D8C7AE;">/</span>
+        <a class="navlink" href="hospitals-ru.html" style="color: #8C7A62;">RU</a>
+        <span style="color: #D8C7AE;">/</span>
+        <a class="navlink" href="hospitals-fr.html" style="color: #8C7A62;">FR</a>
+        <span style="color: #D8C7AE;">/</span>
+        <span style="color: #B9622F; font-weight: 600;">中文</span>
+      </div>
+      <a href="zh.html#services" class="mm-link">服务项目</a>
+      <a href="hospitals-zh.html" class="mm-link">试点医院</a>
+      <a href="zh.html#process" class="mm-link">服务流程</a>
+      <a href="zh.html#regions" class="mm-link">服务地区</a>
+      <a href="about-zh.html" class="mm-link">关于我们</a>
+      <a href="zh.html#faq" class="mm-link">常见问题</a>
+      <a href="privacy-zh.html" class="mm-link">隐私政策</a>
+      <a href="zh.html#contact" class="mm-cta">联系协调专员</a>
+    </div>
+    <style>
+      .menu-btn { display: none; background: transparent; border: 1px solid #E0D2BC; border-radius: 8px; width: 42px; height: 42px; align-items: center; justify-content: center; cursor: pointer; padding: 0; }
+      .mobile-menu { flex-basis: 100%; display: flex; flex-direction: column; padding: 10px 0 6px; }
+      .mobile-menu[hidden] { display: none !important; }
+      .mm-link { display: block; padding: 13px 4px; font-size: 16px; color: #241C14; border-bottom: 1px solid #EFE6D8; }
+      .mm-cta { display: block; margin-top: 14px; text-align: center; background: #B9622F; color: #FBF7F1; padding: 13px; border-radius: 8px; font-size: 15px; font-weight: 500; }
+      @media (max-width: 860px) { .menu-btn { display: inline-flex; } nav { flex-wrap: wrap; } .lang-sw { display: none !important; } }
+      .mm-lang { display: flex; align-items: center; gap: 10px; padding: 6px 4px 12px; font-size: 15px; border-bottom: 1px solid #EFE6D8; }
+      @media (min-width: 861px) { .mobile-menu { display: none !important; } }
+    </style>
+    <script>
+      (function () {
+        var b = document.querySelector('.menu-btn'), m = document.getElementById('mobile-menu');
+        if (!b || !m) return;
+        b.addEventListener('click', function () {
+          var open = m.hasAttribute('hidden');
+          if (open) { m.removeAttribute('hidden'); } else { m.setAttribute('hidden', ''); }
+          b.setAttribute('aria-expanded', open ? 'true' : 'false');
+          b.setAttribute('aria-label', open ? '关闭菜单' : '菜单');
+        });
+        m.addEventListener('click', function (e) { if (e.target.tagName === 'A') { m.setAttribute('hidden', ''); b.setAttribute('aria-expanded', 'false'); } });
+      })();
+    </script>
   </nav>
 
   <!-- OFFICIAL PILOT HOSPITALS -->

@@ -74,7 +74,7 @@
       <a class="navlink" href="blog/index.html" style="font-size: 14.5px;">Blog</a>
     </div>
     <div style="display: flex; align-items: center; gap: 20px;">
-      <div style="display: flex; align-items: center; gap: 8px; font-size: 12.5px;">
+      <div class="lang-sw" style="display: flex; align-items: center; gap: 8px; font-size: 12.5px;">
         <span style="color: #B9622F; font-weight: 600;">EN</span>
         <span style="color: #D8C7AE;">/</span>
         <a class="navlink" href="tajikistan-ru.html" style="color: #8C7A62;">RU</a>
@@ -84,7 +84,52 @@
         <a class="navlink" href="zh.html" style="color: #8C7A62;">中文</a>
       </div>
       <a class="nav-cta" href="index.html#contact" style="background: #B9622F; color: #FBF7F1; padding: 10px 20px; border-radius: 8px; font-size: 14px; font-weight: 500;">Talk to a Coordinator</a>
+      <button type="button" class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#241C14" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </div>
+  
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <div class="mm-lang">
+        <span style="color: #B9622F; font-weight: 600;">EN</span>
+        <span style="color: #D8C7AE;">/</span>
+        <a class="navlink" href="tajikistan-ru.html" style="color: #8C7A62;">RU</a>
+        <span style="color: #D8C7AE;">/</span>
+        <a class="navlink" href="fr.html" style="color: #8C7A62;">FR</a>
+        <span style="color: #D8C7AE;">/</span>
+        <a class="navlink" href="zh.html" style="color: #8C7A62;">中文</a>
+      </div>
+      <a href="index.html#services" class="mm-link">Services</a>
+      <a href="hospitals.html" class="mm-link">Hospitals</a>
+      <a href="index.html#process" class="mm-link">How It Works</a>
+      <a href="index.html#regions" class="mm-link">Countries</a>
+      <a href="about.html" class="mm-link">About Us</a>
+      <a href="index.html#faq" class="mm-link">FAQ</a>
+      <a href="blog/index.html" class="mm-link">Blog</a>
+      <a href="privacy.html" class="mm-link">Privacy Policy</a>
+      <a href="index.html#contact" class="mm-cta">Talk to a Coordinator</a>
+    </div>
+    <style>
+      .menu-btn { display: none; background: transparent; border: 1px solid #E0D2BC; border-radius: 8px; width: 42px; height: 42px; align-items: center; justify-content: center; cursor: pointer; padding: 0; }
+      .mobile-menu { flex-basis: 100%; display: flex; flex-direction: column; padding: 10px 0 6px; }
+      .mobile-menu[hidden] { display: none !important; }
+      .mm-link { display: block; padding: 13px 4px; font-size: 16px; color: #241C14; border-bottom: 1px solid #EFE6D8; }
+      .mm-cta { display: block; margin-top: 14px; text-align: center; background: #B9622F; color: #FBF7F1; padding: 13px; border-radius: 8px; font-size: 15px; font-weight: 500; }
+      @media (max-width: 860px) { .menu-btn { display: inline-flex; } nav { flex-wrap: wrap; } .lang-sw { display: none !important; } }
+      .mm-lang { display: flex; align-items: center; gap: 10px; padding: 6px 4px 12px; font-size: 15px; border-bottom: 1px solid #EFE6D8; }
+      @media (min-width: 861px) { .mobile-menu { display: none !important; } }
+    </style>
+    <script>
+      (function () {
+        var b = document.querySelector('.menu-btn'), m = document.getElementById('mobile-menu');
+        if (!b || !m) return;
+        b.addEventListener('click', function () {
+          var open = m.hasAttribute('hidden');
+          if (open) { m.removeAttribute('hidden'); } else { m.setAttribute('hidden', ''); }
+          b.setAttribute('aria-expanded', open ? 'true' : 'false');
+          b.setAttribute('aria-label', open ? 'Close menu' : 'Menu');
+        });
+        m.addEventListener('click', function (e) { if (e.target.tagName === 'A') { m.setAttribute('hidden', ''); b.setAttribute('aria-expanded', 'false'); } });
+      })();
+    </script>
   </nav>
 
   <header class="pad-hero" style="width: 100%; box-sizing: border-box; padding: 80px 56px 48px;">
