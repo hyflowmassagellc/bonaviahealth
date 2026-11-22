@@ -65,4 +65,88 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://bonaviahealth.org/privacy-zh.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/privacy.html"/>
   </url>
+  <url>
+    <loc>https://bonaviahealth.org/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/blog/ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/blog/"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/blog/ru.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/blog/ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/blog/"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/blog/artemisinin.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/blog/artemisinin.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/blog/artemisinin-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/blog/artemisinin.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/blog/artemisinin-ru.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/blog/artemisinin.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/blog/artemisinin-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/blog/artemisinin.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/blog/integrative-cancer-care.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/blog/integrative-cancer-care.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/blog/integrative-cancer-care-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/blog/integrative-cancer-care.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/blog/integrative-cancer-care-ru.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/blog/integrative-cancer-care.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/blog/integrative-cancer-care-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/blog/integrative-cancer-care.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/blog/tcm-visit-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/blog/tcm-visit-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/blog/tcm-visit-guide-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/blog/tcm-visit-guide.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/blog/tcm-visit-guide-ru.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/blog/tcm-visit-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/blog/tcm-visit-guide-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/blog/tcm-visit-guide.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/blog/acupuncture-evidence.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/blog/acupuncture-evidence.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/blog/acupuncture-evidence-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/blog/acupuncture-evidence.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/blog/acupuncture-evidence-ru.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/blog/acupuncture-evidence.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/blog/acupuncture-evidence-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/blog/acupuncture-evidence.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/blog/treat-before-illness.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/blog/treat-before-illness.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/blog/treat-before-illness-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/blog/treat-before-illness.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/blog/treat-before-illness-ru.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/blog/treat-before-illness.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/blog/treat-before-illness-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/blog/treat-before-illness.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/blog/health-checkup-china.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/blog/health-checkup-china.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/blog/health-checkup-china-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/blog/health-checkup-china.html"/>
+  </url>
+  <url>
+    <loc>https://bonaviahealth.org/blog/health-checkup-china-ru.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bonaviahealth.org/blog/health-checkup-china.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/blog/health-checkup-china-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/blog/health-checkup-china.html"/>
+  </url>
 </urlset>

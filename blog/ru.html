@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Блог — Bonavia Health</title>
+<meta name="description" content="Полезные материалы для иностранных пациентов и истории китайской медицины от Bonavia Health.">
+<link rel="canonical" href="https://bonaviahealth.org/blog/ru.html">
+<link rel="alternate" hreflang="en" href="https://bonaviahealth.org/blog/">
+<link rel="alternate" hreflang="ru" href="https://bonaviahealth.org/blog/ru.html">
+<link rel="alternate" hreflang="x-default" href="https://bonaviahealth.org/blog/">
+<meta property="og:title" content="Блог">
+<meta property="og:description" content="Полезные материалы для иностранных пациентов и истории китайской медицины от Bonavia Health.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://bonaviahealth.org/blog/ru.html">
+<meta property="og:image" content="https://bonaviahealth.org/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta name="theme-color" content="#B9622F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #FBF7F1; font-family: 'IBM Plex Sans', system-ui, sans-serif; color: #241C14; }
+  h1, h2, h3 { font-family: 'Newsreader', Georgia, serif; font-weight: 500; margin: 0; }
+  a { color: #B9622F; text-decoration: none; }
+  a:focus-visible { outline: 2px solid #B9622F; outline-offset: 2px; }
+  .navlink { color: #5A4B3B; } .navlink:hover { color: #B9622F; }
+  nav.top { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 18px 56px; border-bottom: 1px solid #EAE0D2; background: rgba(251,247,241,0.95); position: sticky; top: 0; z-index: 10; }
+  .wrap { max-width: 740px; margin: 0 auto; padding: 56px 24px 80px; box-sizing: border-box; }
+  .crumbs { font-size: 13px; color: #8C7A62; margin-bottom: 18px; }
+  .crumbs a { color: #8C7A62; } .crumbs a:hover { color: #B9622F; }
+  .cat { display: inline-block; font-size: 12.5px; letter-spacing: .08em; text-transform: uppercase; color: #B9622F; font-weight: 600; }
+  article h1 { font-size: 42px; line-height: 1.15; margin: 12px 0 14px; }
+  .meta { font-size: 14px; color: #8C7A62; margin-bottom: 36px; padding-bottom: 24px; border-bottom: 1px solid #EAE0D2; }
+  article p, article li { font-size: 17px; line-height: 1.8; color: #3E3226; }
+  article p { margin: 0 0 18px; }
+  article p.lead { font-size: 19.5px; line-height: 1.7; color: #241C14; }
+  article h2 { font-size: 27px; margin: 40px 0 14px; }
+  article h3 { font-size: 21px; margin: 0 0 12px; }
+  article ul { padding-left: 22px; margin: 0 0 18px; } article li { margin-bottom: 8px; }
+  article b, article strong { color: #241C14; font-weight: 600; }
+  blockquote { margin: 26px 0; padding: 22px 26px; background: #FFFFFF; border-left: 4px solid #B9622F; border-radius: 0 12px 12px 0; }
+  blockquote p { margin: 0 0 8px !important; font-style: italic; }
+  blockquote p.zh { font-style: normal; font-family: 'Noto Serif SC', 'Noto Serif CJK SC', serif; font-size: 18px; color: #241C14; }
+  .callout { background: #FFFFFF; border: 1px solid #EAE0D2; border-top: 4px solid #3F7A3A; border-radius: 14px; padding: 24px 26px 8px; margin: 34px 0; }
+  .cta { display: inline-block; background: #B9622F; color: #FBF7F1 !important; padding: 13px 26px; border-radius: 8px; font-size: 15.5px; font-weight: 500; margin: 8px 0 30px; }
+  .sources { font-size: 14px; color: #6B5A46; border-top: 1px solid #EAE0D2; padding-top: 22px; margin-top: 16px; }
+  .sources h3 { font-size: 18px; margin-bottom: 10px; } .sources li { font-size: 14px; line-height: 1.6; margin-bottom: 6px; }
+  .disclaimer { font-size: 13px; color: #8C7A62; line-height: 1.7; margin-top: 26px; }
+  .more { margin-top: 48px; border-top: 1px solid #EAE0D2; padding-top: 28px; }
+  .more h3 { font-size: 22px; margin-bottom: 16px; }
+  .card { display: block; background: #FFFFFF; border: 1px solid #EAE0D2; border-radius: 14px; padding: 22px 24px; margin-bottom: 14px; transition: transform .15s ease, box-shadow .15s ease; }
+  .card:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(36,28,20,0.08); }
+  .card .t { font-family: 'Newsreader', Georgia, serif; font-size: 21px; color: #241C14; line-height: 1.3; margin: 6px 0 8px; }
+  .card .d { font-size: 15px; color: #6B5A46; line-height: 1.6; margin: 0; }
+  .card .m { font-size: 13px; color: #8C7A62; margin-top: 10px; }
+  @media (max-width: 860px) { nav.top { padding: 14px 18px; } article h1 { font-size: 32px; } .wrap { padding-top: 36px; } }
+</style>
+</head>
+<body>
+  <nav class="top">
+    <a href="../ru.html" style="display: flex; align-items: center; gap: 10px;">
+      <span style="width: 30px; height: 30px; border-radius: 8px; background: #B9622F; display: inline-flex; align-items: center; justify-content: center;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FBF7F1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19c4-10 12-10 16-14"/><path d="M14 5h6v6"/></svg></span>
+      <span style="font-family: 'Newsreader', serif; font-size: 19px; font-weight: 600; color: #241C14; white-space: nowrap;">Bonavia Health</span>
+    </a>
+    <div style="display: flex; align-items: center; gap: 20px; font-size: 13.5px;">
+      <a class="navlink" href="ru.html">Блог</a>
+      <span style="white-space: nowrap;"><a class="navlink" href="index.html" style="color: #8C7A62;">EN</a> <span style="color: #D8C7AE;">/</span> <span style="color: #B9622F; font-weight: 600;">RU</span></span>
+    </div>
+  </nav>
+  <main class="wrap">
+    <div class="crumbs"><a href="../ru.html">Главная</a> / Блог</div>
+    <span class="cat">Bonavia Health</span>
+    <h1 style="font-size: 44px; margin: 10px 0 14px;">Статьи и истории</h1>
+    <p style="font-size: 17px; line-height: 1.7; color: #5A4B3B; margin: 0 0 36px;">Практические советы для тех, кто планирует лечение в Китае, и истории из многовековой китайской медицины — с проверенными источниками.</p>
+    <a class="card" href="artemisinin-ru.html"><span class="cat">Китайская медицина</span><div class="t">Рецепт возрастом 1700 лет, который привёл к Нобелевской премии</div><p class="d">Как одна строка из древнего китайского медицинского трактата помогла Ту Юю открыть артемизинин — и чему эта история учит пациентов о китайской медицине сегодня.</p><div class="m">21 ноября 2026 г. · 6 минут чтения</div></a><a class="card" href="integrative-cancer-care-ru.html"><span class="cat">Онкология</span><div class="t">Комплексное лечение рака: как в Китае сочетают современную и традиционную медицину</div><p class="d">Какую роль на самом деле играет китайская медицина в онкологии в больницах Китая, что говорят исследования и какие вопросы задать до поездки.</p><div class="m">21 ноября 2026 г. · 6 минут чтения</div></a><a class="card" href="tcm-visit-guide-ru.html"><span class="cat">Гид для пациента</span><div class="t">Приём у врача китайской медицины в Китае: гид для иностранных пациентов</div><p class="d">Куда обратиться, как проходит приём, основные методы лечения, стоимость и как вывезти травяные лекарства — практическое руководство.</p><div class="m">21 ноября 2026 г. · 7 минут чтения</div></a><a class="card" href="acupuncture-evidence-ru.html"><span class="cat">Китайская медицина</span><div class="t">Акупунктура: что говорит наука — и чего она не говорит</div><p class="d">Честный обзор исследований акупунктуры: где она помогает, где доказательства слабые и как не навредить себе.</p><div class="m">21 ноября 2026 г. · 5 минут чтения</div></a><a class="card" href="treat-before-illness-ru.html"><span class="cat">История и культура</span><div class="t">«Лучший врач лечит то, что ещё не стало болезнью»: «Канон Жёлтого императора» и профилактика</div><p class="d">Более 2000 лет назад древнейший медицинский канон Китая утверждал, что предупредить болезнь лучше, чем лечить. Что эта идея значит для пациентов сегодня.</p><div class="m">21 ноября 2026 г. · 5 минут чтения</div></a><a class="card" href="health-checkup-china-ru.html"><span class="cat">Гид для пациента</span><div class="t">Чекап в Китае: почему всё больше иностранцев проходят обследование</div><p class="d">Что входит в комплексное обследование в Китае, почему оно популярно у иностранцев, визовые варианты и как подготовиться.</p><div class="m">21 ноября 2026 г. · 6 минут чтения</div></a>
+  </main>
+  <footer style="padding: 32px 24px; background: #241C14; color: #8C7A62; font-size: 13px; text-align: center; line-height: 1.8;">
+    © 2026 Bonavia Health · <a href="mailto:info@bonaviahealth.org" style="color: #C9B79E;">info@bonaviahealth.org</a> · <a href="../privacy-ru.html" style="color: #C9B79E;">Политика конфиденциальности</a>
+  </footer>
+<a href="https://wa.me/8618024036999" target="_blank" rel="noopener" aria-label="WhatsApp" style="position: fixed; right: 20px; bottom: 20px; width: 56px; height: 56px; border-radius: 999px; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(0,0,0,0.18); z-index: 50;"><svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><path fill="#FFFFFF" d="M16.04 3C9.4 3 4 8.36 4 14.97c0 2.11.56 4.17 1.62 5.99L4 29l8.27-2.16a12.1 12.1 0 0 0 3.77.6h.01c6.63 0 12.03-5.36 12.03-11.97C28.08 8.36 22.68 3 16.04 3Zm0 21.9h-.01c-1.18 0-2.34-.21-3.44-.62l-.39-.15-4.9 1.28 1.31-4.76-.25-.39a9.84 9.84 0 0 1-1.55-5.29c0-5.48 4.48-9.93 9.99-9.93 5.5 0 9.98 4.45 9.98 9.93 0 5.48-4.48 9.93-9.74 9.93Zm5.47-7.43c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47 0 1.46 1.07 2.87 1.21 3.07.15.2 2.1 3.2 5.09 4.48.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.77-.72 2.02-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35Z"/></svg></a>
+</body>
+</html>
